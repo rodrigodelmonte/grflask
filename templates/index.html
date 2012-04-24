@@ -2,17 +2,13 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
 <head>
-{% block meta %}
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Language" content="pt-br" />
 <meta name="keywords" content="GrandeRock, Grande-Rock, Grande, Rock" />
 <meta name="description" content="Site oficial da banda Grande Rock." />
 <meta name="google-site-verification" content="mdDJ8ZdvCDR5VLKwrSCEuvsecyf_r4HIrhC2SpuDcUw" />
-{% endblock meta %}
-{% block style %}
-<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}layout.css"/>
+<link rel="stylesheet" type="text/css" href="/static/layout.css"/>
 <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Bad+Script|Jolly+Lodger|Della+Respira|Graduate'/>
-{% endblock style %}
 <title>Grande Rock</title>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -24,6 +20,12 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+ <!-- load jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<!-- load Galleria -->
+<script src="/static/galleria/galleria-1.2.7.min.js"></script>
+<!-- load flickr plugin -->
+<script src="/static/galleria/plugins/flickr/galleria.flickr.min.js"></script>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -60,11 +62,25 @@ Os membros do grupo são: Rodrigo Vieira e Bruno Serato nas guitarras, Douglas
 Martins na bateria e Bruno Kuba no baixo e vocais.
 </div>
 
+<div id="galleria"></div>
+<script>
+// Load the classic theme
+Galleria.loadTheme('/static/galleria/themes/classic/galleria.classic.min.js');
+// Initialize Galleria
+Galleria.run('#galleria', {
+flickr: 'user:granderock',
+flickrOptions: {
+    sort: 'date-posted-asc',
+    description: true,
+}
+});
+</script>
+
 <ul id="social">
-<li><a href="http://twitter.com/Grande_Rock" target="_blank"><img src="{{ MEDIA_URL }}twitter.png" alt="twitter"/></a></li>
-<li><a href="http://www.youtube.com/user/bandagranderock" target="_blank"><img src="{{ MEDIA_URL }}youtube.png" alt="youtube"/></a></li>
-<li><a href="http://www.flickr.com/photos/granderock" target="_blank"><img src="{{ MEDIA_URL }}flickr.png" alt="flickr"/></a></li>
-<li><a href="https://www.facebook.com/pages/Grande-Rock/159301724146373" target="_blank"><img src="{{ MEDIA_URL }}facebook.png" alt="facebook"/></a></li>
+<li><a href="http://twitter.com/Grande_Rock" target="_blank"><img src="/static/twitter.png" alt="twitter"/></a></li>
+<li><a href="http://www.youtube.com/user/bandagranderock" target="_blank"><img src="/static/youtube.png" alt="youtube"/></a></li>
+<li><a href="http://www.flickr.com/photos/granderock" target="_blank"><img src="/static/flickr.png" alt="flickr"/></a></li>
+<li><a href="https://www.facebook.com/pages/Grande-Rock/159301724146373" target="_blank"><img src="/static/facebook.png" alt="facebook"/></a></li>
 </ul>
 
 <div id="seguir">

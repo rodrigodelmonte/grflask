@@ -18,6 +18,13 @@ position:absolute;
 padding-left:460px;
 padding-top:520px;
 }
+#galleria {
+position:absolute;
+padding-left:4px;
+padding-top:930px;
+height:320px;
+width: 700px;
+}
 #twittergr {
 position:absolute;
 padding-left:460px;
@@ -32,7 +39,7 @@ width:450px;
 text-align:justify;
 font-family:'Della Respira', serif;
 /*font-family:'Arial';*/
-font-size:16px;
+font-size:14px;
 color:white;
 }
 #youtube {
