@@ -1,0 +1,27 @@
+body {
+background-image:url('pattern_35.gif');
+}
+img.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+#galleria {
+height:640px;
+width: 100%;
+}
+#release { 
+width:100%;
+text-align:justify;
+font-family:'Della Respira', serif;
+font-size:16px;
+color:white;
+}
+ul {
+list-style-type:none;
+margin:0;
+padding:0;
+}
+li {
+float:left;
+}

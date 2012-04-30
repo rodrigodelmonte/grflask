@@ -7,7 +7,8 @@
 <meta name="keywords" content="GrandeRock, Grande-Rock, Grande, Rock" />
 <meta name="description" content="Site oficial da banda Grande Rock." />
 <meta name="google-site-verification" content="mdDJ8ZdvCDR5VLKwrSCEuvsecyf_r4HIrhC2SpuDcUw" />
-<link rel="stylesheet" type="text/css" href="/static/layout.css"/>
+<link rel="stylesheet" type="text/css" href="/static/css/layout.css"/>
+<link rel="stylesheet" type="text/css" href="/static/css/960.css"/>
 <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Bad+Script|Jolly+Lodger|Della+Respira|Graduate'/>
 <title>Grande Rock</title>
 <script type="text/javascript">
@@ -37,15 +38,16 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div id="content">
+<div class="container_12 ">
 
-<div id="youtube">
-<iframe width="425" height="349" src="http://www.youtube.com/embed/FnrQpTzuvXM" frameborder="0"></iframe>
+<div class="grid_12">
+<img class="center" src="/static/img/logo.png" alt="facebook" />
 </div>
 
-<div id="soundcloud">
-<object height="225" width="100%"> <param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F1536128"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="225" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F1536128" type="application/x-shockwave-flash" width="100%"></embed> </object>
-</div>
+<div class="grid_8">
+<iframe width="100%" height="349" src="http://www.youtube.com/embed/FnrQpTzuvXM" frameborder="0"></iframe><br/><br/>
+
+<object height="225" width="100%"> <param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F1536128"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="225" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F1536128" type="application/x-shockwave-flash" width="100%"></embed> </object><br/><br/>
 
 <div id="release">
 <b>O Grande Rock</b></br>
@@ -60,34 +62,21 @@ A banda - Grande Rock - surgiu sob esse nome em 2009 e desde então busca seu
 espaço no cenário underground, já tendo tocado em diversos clubs e bares. 
 Os membros do grupo são: Rodrigo Vieira e Bruno Serato nas guitarras, Douglas
 Martins na bateria e Bruno Kuba no baixo e vocais.
+</div><br/>
 </div>
 
-<div id="galleria"></div>
-<script>
-// Load the classic theme
-Galleria.loadTheme('/static/galleria/themes/classic/galleria.classic.min.js');
-// Initialize Galleria
-Galleria.run('#galleria', {
-flickr: 'user:granderock',
-flickrOptions: {
-    sort: 'date-posted-asc',
-    description: true,
-}
-});
-</script>
+<div class="grid_4">
 
-<ul id="social">
-<li><a href="http://twitter.com/Grande_Rock" target="_blank"><img src="/static/twitter.png" alt="twitter"/></a></li>
-<li><a href="http://www.youtube.com/user/bandagranderock" target="_blank"><img src="/static/youtube.png" alt="youtube"/></a></li>
-<li><a href="http://www.flickr.com/photos/granderock" target="_blank"><img src="/static/flickr.png" alt="flickr"/></a></li>
-<li><a href="https://www.facebook.com/pages/Grande-Rock/159301724146373" target="_blank"><img src="/static/facebook.png" alt="facebook"/></a></li>
-</ul>
+<ul>
+<li><a href="http://twitter.com/Grande_Rock" target="_blank"><img src="/static/img/twitter.png" alt="twitter"/></a></li>
+<li><a href="http://www.youtube.com/user/bandagranderock" target="_blank"><img src="/static/img/youtube.png" alt="youtube"/></a></li>
+<li><a href="http://www.flickr.com/photos/granderock" target="_blank"><img src="/static/img/flickr.png" alt="flickr"/></a></li>
+<li><a href="https://www.facebook.com/pages/Grande-Rock/159301724146373" target="_blank"><img src="/static/img/facebook.png" alt="facebook"/></a></li>
+</ul><br/><br/>
 
-<div id="seguir">
 <a href="https://twitter.com/Grande_Rock" class="twitter-follow-button" data-show-count="false" data-lang="pt" data-size="large">Seguir @Grande_Rock</a>
-<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><br/><br/>
 
-<div id="twittergr">
 <script type="text/javascript" charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script type="text/javascript">
 new TWTR.Widget({
@@ -115,12 +104,26 @@ new TWTR.Widget({
     behavior: 'all'
   }
 }).render().setUser('Grande_Rock').start();
-</script>    
-</div>
+</script><br/><br/>   
 
-<div id="facebook">
 <div class="fb-like" data-href="http://www.granderock.com.br" data-send="true" data-width="250" data-show-faces="true" data-colorscheme="dark" data-font="arial"></div><br/>
 <div class="fb-activity" data-site="http://www.granderock.com.br" data-width="250" data-height="300" data-header="true" data-colorscheme="dark" data-linktarget="_top" data-recommendations="true"></div>
+</div>
+
+<div class="grid_12">
+<div id="galleria"></div>
+<script>
+// Load the classic theme
+Galleria.loadTheme('/static/galleria/themes/classic/galleria.classic.min.js');
+// Initialize Galleria
+Galleria.run('#galleria', {
+flickr: 'user:granderock',
+flickrOptions: {
+    sort: 'date-posted-asc',
+    description: true,
+}
+});
+</script>
 </div>
 
 </div>
