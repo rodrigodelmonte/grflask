@@ -1,7 +1,7 @@
 import os
 from flask import Flask
 from flask import render_template
-from flask import url_for
+from flask import make_response
 
 app = Flask(__name__)
 
@@ -9,8 +9,11 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-with app.test_request_context():
-    url_for('static', filename='style.css')
+@app.route('/robots.txt')
+def robots():
+    response = make_response(render_template('robots.txt'))
+    response.headers['Content-Type'] = 'text/plain'
+    return response
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
