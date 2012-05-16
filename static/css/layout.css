@@ -1,26 +1,29 @@
 body {
-background-image:url('pattern_35.gif');
+	background-image:url('pattern_35.gif');
 }
 img.center {
-display: block;
-margin-left: auto;
-margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 #galleria {
-height:520px;
-width: 100%;
+	height:520px;
+	width: 100%;
 }
 .text { 
-width:100%;
-font-family:Arial Black, Gadget, sans-serif;
-font-size:18px;
-color:white;
+	width:100%;
+	font-family:Arial, sans-serif;
+	font-size:18px;
+	color:white;
 }
 ul {
-list-style-type:none;
-margin:0;
-padding:0;
+	list-style-type:none;
+	margin:0;
+	padding:0;
 }
 li {
-float:left;
+	float:left;
+}
+.black.button {
+	left: 35%;
 }
