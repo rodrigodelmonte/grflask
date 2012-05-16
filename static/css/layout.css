@@ -10,6 +10,9 @@ img.center {
 	height:520px;
 	width: 100%;
 }
+h2, p {
+	font-family:Arial, sans-serif;
+}
 .text { 
 	width:100%;
 	font-family:Arial, sans-serif;
