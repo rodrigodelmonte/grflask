@@ -10,10 +10,6 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/teste')
-def teste():
-    return render_template('index2.html')
-
 @app.route('/robots.txt')
 def robots():
     response = make_response(render_template('robots.txt'))
